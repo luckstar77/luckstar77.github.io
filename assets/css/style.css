@@ -642,6 +642,7 @@ h3 > .fa {
 
 .portfolio-item-preview {
 	position: relative;
+	line-height: 195px;
 }
 
 .portfolio-item:hover .portfolio-item-preview {
