@@ -7,6 +7,17 @@
 	$(window).load(function() {
 		$('#status').fadeOut();
 		$('#preloader').delay(350).fadeOut('slow');
+
+		$('#sendEmail').on('click', function(e){
+			var name=$("[name='name']").val(),
+			email=$("[name='email']").val(),
+			number=$("[name='number']").val(),
+			message=$("[name='message']").val(),
+			body="My Name is: "+name+"%0a%0d"
+				+"My Email Address is: "+email+"%0a%0d"
+				+"Message:"+"%0a%0d"+message.replace(/\n|\r\n/, '%0a%0d');
+			$("#sendEmail").attr("href","mailto:luckstar77y@gmail.com?subject=Hi, I would like to contack you.&body="+body);
+		});
 	});
 
 	$(document).ready(function() {

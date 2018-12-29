@@ -23,6 +23,11 @@
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
+    display: flex !important;
+    align-items: flex-end;
+}
+.owl-item h4 {
+    height: 38px;
 }
 .owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
