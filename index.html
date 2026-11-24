@@ -5,146 +5,374 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>賴逸倫 Allen Lai｜全端工程師（後端為主）</title>
 <meta name="description" content="賴逸倫（Allen Lai）：以後端為主的全端工程師，近 15 年軟體開發經驗，主要使用 Node.js 與 TypeScript，2026 年起以 AI coding agent 開發企業 SaaS。">
+<meta name="author" content="Allen Lai">
 <link rel="canonical" href="https://imallenlai.com/">
-<link rel="icon" href="data:,">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://imallenlai.com/">
 <meta property="og:title" content="賴逸倫 Allen Lai｜全端工程師（後端為主）">
 <meta property="og:description" content="近 15 年軟體開發經驗，主要使用 Node.js 與 TypeScript，2026 年起以 AI coding agent 開發企業 SaaS。">
-<style>
-  :root { --text: #1f2933; --muted: #5b6770; --line: #e2e6ea; --accent: #0b6bcb; --bg: #ffffff; --card: #f6f8fa; }
-  @media (prefers-color-scheme: dark) {
-    :root { --text: #e6e9ec; --muted: #a3adb6; --line: #2d353c; --accent: #6cb6ff; --bg: #14181c; --card: #1c2228; }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
-    font-size: 17px; line-height: 1.75;
-  }
-  main { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; }
-  h1 { font-size: 2rem; line-height: 1.3; margin: 0 0 6px; letter-spacing: 0.02em; }
-  h1 span { font-weight: 400; color: var(--muted); font-size: 1.35rem; margin-left: 8px; }
-  h2 { font-size: 1.15rem; margin: 44px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
-  h3 { font-size: 1.02rem; margin: 0 0 4px; }
-  p { margin: 0 0 14px; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover, a:focus { text-decoration: underline; }
-  .tagline { font-size: 1.05rem; color: var(--muted); margin-bottom: 14px; }
-  .contact a { margin-right: 18px; white-space: nowrap; }
-  ul { margin: 0; padding-left: 1.25em; }
-  li { margin-bottom: 8px; }
-  .jobs { list-style: none; padding: 0; }
-  .jobs li { margin-bottom: 16px; }
-  .jobs .when { color: var(--muted); font-size: 0.93rem; }
-  .jobs .what { display: block; color: var(--muted); }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin-bottom: 14px; }
-  .card p { margin-bottom: 8px; }
-  .card .links { font-size: 0.95rem; margin-bottom: 0; }
-  .card .links a { margin-right: 14px; white-space: nowrap; }
-  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
-  @media (max-width: 480px) {
-    main { padding: 36px 18px 32px; }
-    h1 { font-size: 1.65rem; }
-    h1 span { display: block; margin-left: 0; font-size: 1.15rem; }
-    body { font-size: 16px; }
-  }
-</style>
+<link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
-<main>
 
-<header>
-  <h1>賴逸倫<span>Allen Lai</span></h1>
-  <p class="tagline">以 AI coding agent 開發企業 SaaS 的全端工程師（後端為主）</p>
-  <p class="contact">
-    <a href="mailto:luckstar77y@gmail.com">luckstar77y@gmail.com</a>
-    <a href="https://github.com/luckstar77">GitHub：luckstar77</a>
-  </p>
-</header>
+<svg width="0" height="0" class="visually-hidden" aria-hidden="true" focusable="false">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7v10"/><path d="M6 7c0 3 3 5 10 5"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01"/><path d="M7 16.5h.01"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M12 8V4"/><path d="M10 4h4"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M9 16.5h6"/><path d="M2 12v3"/><path d="M22 12v3"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17.5l9 5 9-5"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L10 14"/><path d="M21 3l-7 18-4-7-7-4 18-7z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+  <!-- GitHub 標誌：取自 GitHub Octicons（mark-github，Copyright (c) GitHub Inc.，MIT License）；依 GitHub 的標誌使用規範，只用來連到 GitHub 個人頁。 -->
+  <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+</svg>
 
-<section>
-  <h2>簡介</h2>
-  <p>近 15 年軟體開發經驗（2011 年起全職），以後端為主的全端工程師，主要使用 Node.js 與 TypeScript。現任光寶科技 Cedars 團隊 Full-Stack Engineer，負責企業碳管理 SaaS 平台的技術設計、後端計算服務與前端功能。</p>
-  <p>2026 年起以 AI coding agent（Claude Code、Codex CLI）開發這個產品，並設定 MCP 與命令列工具，讓 agent 直接操作專案管理系統、GitLab 與瀏覽器，同時為 agent 設計唯讀防護與協作規則。</p>
-</section>
+<div class="wrapper">
 
-<section>
-  <h2>經歷</h2>
-  <ul class="jobs">
-    <li>
-      <h3>光寶科技 LITE-ON（Cedars 團隊）｜Full-Stack Engineer</h3>
-      <span class="when">2025/10 – 迄今</span>
-      <span class="what">企業碳管理 SaaS 平台：NestJS 微服務與 React 微前端；技術設計與 API 契約、排放計算服務、Excel 批次匯入。</span>
-    </li>
-    <li>
-      <h3>現觀科技 Groundhog Technologies｜Senior Node.js Engineer</h3>
-      <span class="when">2019/05 – 2025/10</span>
-      <span class="what">廣告技術：即時競價（RTB）系統與需求方平台（DSP）的開發與維運。</span>
-    </li>
-    <li>
-      <h3>布洛卡斯 BROCAS｜Node.js 工程師</h3>
-      <span class="when">2016/05 – 2019/05</span>
-      <span class="what">為客戶開發多個 Web 產品，並帶領 4 人以下的開發小組。</span>
-    </li>
-    <li>
-      <h3>更早的經歷</h3>
-      <span class="when">2011/10 – 2016/05</span>
-      <span class="what">電商導購平台、品牌活動網站與即時互動網頁遊戲、導航機與行車紀錄器軟體。</span>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>技能</h2>
-  <ul>
-    <li><strong>AI agent：</strong>Claude Code、Codex CLI；MCP 與命令列工具串接；多 agent 平行開發；agent 的唯讀防護與用量統計</li>
-    <li><strong>後端：</strong>Node.js、TypeScript、NestJS、Express；REST 與 OpenAPI 3.1；Temporal、RabbitMQ</li>
-    <li><strong>資料庫：</strong>PostgreSQL、MySQL、MongoDB、Redis</li>
-    <li><strong>前端：</strong>React、微前端（Webpack Module Federation）、Next.js</li>
-    <li><strong>測試：</strong>Jest、Vitest、React Testing Library；連真實資料庫的 E2E 測試</li>
-  </ul>
-</section>
-
-<section>
-  <h2>個人專案</h2>
-
-  <div class="card">
-    <h3>租屋通（2022 起）</h3>
-    <p>以 TypeScript 撰寫司法院判決書擷取與解析的資料管線，整合成租屋案例的查詢服務。後端用 Express 與 MySQL，前端用 React。</p>
-    <p class="links">
-      <a href="https://rental.imallenlai.com">網站</a>
-      <a href="https://github.com/luckstar77/crawl-judicial-cases">原始碼：資料管線</a>
-      <a href="https://github.com/luckstar77/api-judicial-cases">後端</a>
-      <a href="https://github.com/luckstar77/web-judicial-cases">前端</a>
-    </p>
+  <div id="preloader" aria-hidden="true">
+    <div class="spinner"></div>
+    <h4>Allen Lai</h4>
   </div>
 
-  <div class="card">
-    <h3>權息通（2019 起）</h3>
-    <p>台股歷年除權息、填息與殖利率查詢服務。以 Puppeteer 擷取資料，後端用 Express、MongoDB 與 Redis，前端用 React。</p>
-    <p class="links">
-      <a href="https://stock.imallenlai.com">網站</a>
-      <a href="https://github.com/luckstar77/api-stock-dividend-yield">原始碼：後端</a>
-      <a href="https://github.com/luckstar77/web-stock-dividend-yield">前端</a>
-      <a href="https://github.com/luckstar77/crawl-stock-dividend-yield">爬蟲</a>
-    </p>
-  </div>
-</section>
+  <!-- 導覽列 -->
+  <nav class="navbar" aria-label="主要導覽">
+    <div class="container">
+      <a class="navbar-brand" href="#intro">Allen Lai</a>
+      <button type="button" class="navbar-toggle" aria-controls="nav-collapse" aria-expanded="false">
+        <span class="visually-hidden">開啟選單</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse" id="nav-collapse">
+        <ul class="nav">
+          <li><a href="#intro">首頁</a></li>
+          <li><a href="#profile">關於我</a></li>
+          <li><a href="#services">專長</a></li>
+          <li><a href="#resume">經歷</a></li>
+          <li><a href="#portfolio">專案</a></li>
+          <li><a href="#contact">聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<section>
-  <h2>學歷</h2>
-  <ul>
-    <li>國立臺北教育大學 資訊科學系 碩士（2023/09 – 2025/06，在職進修）</li>
-    <li>國立中正大學 資訊工程學系 學士（2006/09 – 2010/06）</li>
-  </ul>
-</section>
+  <!-- 首頁大圖 -->
+  <section id="intro">
+    <div class="container">
+      <div class="hello">
+        <h1>你好，我是賴逸倫</h1>
+        <h3><span class="rotate" data-phrases="以後端為主的全端工程師|用 AI coding agent 開發企業 SaaS|Node.js、TypeScript、NestJS、React">以後端為主的全端工程師</span></h3>
+      </div>
+      <a href="#profile" class="mouse-icon" aria-label="往下捲動"><span class="wheel"></span></a>
+    </div>
+  </section>
 
-<footer>© 2026 賴逸倫 Allen Lai</footer>
+  <!-- 聯絡方式 -->
+  <section id="profile-contact">
+    <div class="container">
+      <div class="row">
+        <div class="sm-4 profile-item reveal from-left">
+          <svg class="icon"><use href="#i-mail"/></svg>
+          <h5><a href="mailto:luckstar77y@gmail.com">luckstar77y@gmail.com</a></h5>
+        </div>
+        <div class="sm-4 profile-item reveal from-up">
+          <svg class="icon solid"><use href="#i-github"/></svg>
+          <h5><a href="https://github.com/luckstar77">github.com/luckstar77</a></h5>
+        </div>
+        <div class="sm-4 profile-item reveal from-right">
+          <svg class="icon"><use href="#i-pin"/></svg>
+          <h5>台灣</h5>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</main>
+  <!-- 關於我 -->
+  <section id="profile" class="section">
+    <div class="container">
+      <div class="row">
+
+        <div class="headline reveal from-down">
+          <h2>賴逸倫<span class="en">Allen Lai</span>
+            <span class="project-icons">
+              <a href="https://rental.imallenlai.com" aria-label="租屋通網站"><img src="assets/images/rental-icon.png" alt=""></a>
+              <a href="https://stock.imallenlai.com" aria-label="權息通網站"><img src="assets/images/stock-icon.png" alt=""></a>
+            </span>
+          </h2>
+          <p class="sub">全端工程師（後端為主）｜AI coding agent｜Node.js／TypeScript</p>
+        </div>
+
+        <div class="sm-6 md-3 hide-xs reveal from-left">
+          <img class="avatar" src="assets/images/photo.jpg" alt="賴逸倫的照片" width="500" height="680">
+        </div>
+
+        <div class="sm-6 md-3 reveal from-up">
+          <div class="profile-widget">
+            <h3>技能</h3>
+
+            <h5>Node.js／TypeScript</h5>
+            <div class="skill-bar" role="img" aria-label="4 格中的 4 格"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+
+            <h5>NestJS／Express</h5>
+            <div class="skill-bar" role="img" aria-label="4 格中的 4 格"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+
+            <h5>AI coding agent</h5>
+            <div class="skill-bar" role="img" aria-label="4 格中的 3 格"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+
+            <h5>React</h5>
+            <div class="skill-bar" role="img" aria-label="4 格中的 3 格"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+          </div>
+
+          <div class="profile-widget">
+            <h3>找到我</h3>
+            <ul class="widget-social">
+              <li><a href="https://github.com/luckstar77" aria-label="GitHub"><svg class="icon solid"><use href="#i-github"/></svg></a></li>
+              <li><a href="mailto:luckstar77y@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="md-6 profile-text reveal from-right">
+          <h3>簡介</h3>
+          <p>近 15 年軟體開發經驗（2011 年起全職），以後端為主的全端工程師，主要使用 Node.js 與 TypeScript。現任光寶科技 Cedars 團隊 Full-Stack Engineer，負責企業碳管理 SaaS 平台的技術設計、後端計算服務與前端功能。</p>
+          <p>2026 年起以 AI coding agent（Claude Code、Codex CLI）開發這個產品，並設定 MCP 與命令列工具，讓 agent 直接操作專案管理系統、GitLab 與瀏覽器，同時為 agent 設計唯讀防護與協作規則。</p>
+          <p>工作之外，我自己開發並維運兩個線上服務：租屋通與權息通，介紹在下面的「個人專案」。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 數字 -->
+  <section id="stats" class="callout">
+    <div class="container">
+      <div class="row">
+        <div class="md-3 hide-xs reveal from-left">
+          <h3 class="side">一些數字</h3>
+        </div>
+        <div class="sm-4 md-3 stat reveal from-down">
+          <div class="stat-icon"><svg class="icon"><use href="#i-clock"/></svg><span class="num" data-to="15">15</span></div>
+          <h3>年開發經驗</h3>
+          <p>2011 年起全職</p>
+        </div>
+        <div class="sm-4 md-3 stat reveal from-up">
+          <div class="stat-icon"><svg class="icon"><use href="#i-merge"/></svg><span class="num" data-to="89">89</span></div>
+          <h3>個 PR 合併</h3>
+          <p>2025 年 6～8 月，用 Codex 開發個人專案</p>
+        </div>
+        <div class="sm-4 md-3 stat reveal from-right">
+          <div class="stat-icon"><svg class="icon"><use href="#i-globe"/></svg><span class="num" data-to="2">2</span></div>
+          <h3>個線上服務</h3>
+          <p>租屋通、權息通，自己開發與維運</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 專長 -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="headline reveal from-down">
+          <h2>專長</h2>
+          <p class="sub">Services</p>
+        </div>
+
+        <div class="sm-4 service reveal from-left">
+          <div class="service-icon"><svg class="icon"><use href="#i-bot"/></svg></div>
+          <h4>AI coding agent</h4>
+          <p>用 Claude Code、Codex CLI 開發企業 SaaS：設定 MCP 與命令列工具，讓 agent 直接操作專案管理系統、GitLab 與瀏覽器。</p>
+          <p>多 agent 平行開發，並為 agent 設計唯讀防護、協作規則與用量統計。</p>
+        </div>
+
+        <div class="sm-4 service reveal from-up">
+          <div class="service-icon"><svg class="icon"><use href="#i-server"/></svg></div>
+          <h4>後端與 API</h4>
+          <p>Node.js、TypeScript、NestJS、Express；REST 與 OpenAPI 3.1 的 API 契約與技術設計。</p>
+          <p>PostgreSQL、MySQL、MongoDB、Redis；Temporal、RabbitMQ。</p>
+        </div>
+
+        <div class="sm-4 service reveal from-right">
+          <div class="service-icon"><svg class="icon"><use href="#i-layers"/></svg></div>
+          <h4>前端與測試</h4>
+          <p>React、微前端（Webpack Module Federation）、Next.js。</p>
+          <p>Jest、Vitest、React Testing Library；連真實資料庫的 E2E 測試。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡提示 -->
+  <section class="callout">
+    <div class="container">
+      <div class="row">
+        <div class="md-3 hide-xs reveal from-left">
+          <h3 class="side">交流</h3>
+        </div>
+        <div class="md-9 headline nomargin reveal from-down">
+          <h3>想聊聊技術或合作？</h3>
+          <p>歡迎來信聊後端架構、API 設計，或 AI coding agent 在團隊裡的實際用法。</p>
+          <a href="#contact" class="btn btn-custom-2 callout-btn"><svg class="icon"><use href="#i-send"/></svg>寫信給我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 經歷 -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="headline reveal from-down">
+          <h2>經歷</h2>
+          <p class="sub">Resume</p>
+        </div>
+
+        <div class="md-7 resume-group reveal from-left">
+          <h3><svg class="icon"><use href="#i-briefcase"/></svg>工作經歷</h3>
+
+          <div class="resume-place">
+            <h4>光寶科技 LITE-ON（Cedars 團隊）<span class="role">｜Full-Stack Engineer</span></h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2025/10 – 迄今</div>
+            <p>企業碳管理 SaaS 平台：NestJS 微服務與 React 微前端；技術設計與 API 契約、排放計算服務、Excel 批次匯入。</p>
+          </div>
+
+          <div class="resume-place">
+            <h4>現觀科技 Groundhog Technologies<span class="role">｜Senior Node.js Engineer</span></h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2019/05 – 2025/10</div>
+            <p>廣告技術：即時競價（RTB）系統與需求方平台（DSP）的開發與維運。</p>
+          </div>
+
+          <div class="resume-place">
+            <h4>布洛卡斯 BROCAS<span class="role">｜Node.js 工程師</span></h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2016/05 – 2019/05</div>
+            <p>為客戶開發多個 Web 產品，並帶領 4 人以下的開發小組。</p>
+          </div>
+
+          <div class="resume-place">
+            <h4>更早的經歷</h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2011/10 – 2016/05</div>
+            <p>電商導購平台、品牌活動網站與即時互動網頁遊戲、導航機與行車紀錄器軟體。</p>
+          </div>
+        </div>
+
+        <div class="md-5 resume-group reveal from-right">
+          <h3><svg class="icon"><use href="#i-cap"/></svg>學歷</h3>
+
+          <div class="resume-place">
+            <h4>國立臺北教育大學<span class="role">｜資訊科學系 碩士</span></h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2023/09 – 2025/06（在職進修）</div>
+          </div>
+
+          <div class="resume-place">
+            <h4>國立中正大學<span class="role">｜資訊工程學系 學士</span></h4>
+            <div class="when"><svg class="icon"><use href="#i-calendar"/></svg>2006/09 – 2010/06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 個人專案 -->
+  <section id="portfolio" class="section callout">
+    <div class="container">
+      <div class="row">
+        <div class="headline reveal from-down">
+          <h2>個人專案</h2>
+          <p class="sub">Portfolio</p>
+        </div>
+
+        <div class="sm-6 portfolio-card reveal from-left">
+          <a class="portfolio-item" href="https://rental.imallenlai.com" aria-label="開啟租屋通網站">
+            <div class="portfolio-item-preview rental"><img src="assets/images/rental-icon.png" alt="" width="320" height="320"></div>
+            <div class="portfolio-item-description" aria-hidden="true">
+              <h3>租屋通</h3>
+              <p>rental.imallenlai.com</p>
+            </div>
+          </a>
+          <h3>租屋通</h3>
+          <div class="since">2022 起</div>
+          <p>以 TypeScript 撰寫司法院判決書擷取與解析的資料管線，整合成租屋案例的預警查詢服務。後端用 Express 與 MySQL，前端用 React。</p>
+          <p class="links">
+            <a href="https://rental.imallenlai.com"><svg class="icon"><use href="#i-external"/></svg>網站</a>
+            <a href="https://github.com/luckstar77/crawl-judicial-cases"><svg class="icon"><use href="#i-code"/></svg>資料管線</a>
+            <a href="https://github.com/luckstar77/api-judicial-cases"><svg class="icon"><use href="#i-code"/></svg>後端</a>
+            <a href="https://github.com/luckstar77/web-judicial-cases"><svg class="icon"><use href="#i-code"/></svg>前端</a>
+          </p>
+        </div>
+
+        <div class="sm-6 portfolio-card reveal from-right">
+          <a class="portfolio-item" href="https://stock.imallenlai.com" aria-label="開啟權息通網站">
+            <div class="portfolio-item-preview stock"><img src="assets/images/stock-icon.png" alt="" width="320" height="320"></div>
+            <div class="portfolio-item-description" aria-hidden="true">
+              <h3>權息通</h3>
+              <p>stock.imallenlai.com</p>
+            </div>
+          </a>
+          <h3>權息通</h3>
+          <div class="since">2019 起</div>
+          <p>台股歷年除權息、填息與殖利率查詢服務。資料來自證交所與櫃買中心的開放資料，每天自動更新（早期以 Puppeteer 擷取）；後端用 Express、MongoDB 與 Redis，前端用 React。</p>
+          <p class="links">
+            <a href="https://stock.imallenlai.com"><svg class="icon"><use href="#i-external"/></svg>網站</a>
+            <a href="https://github.com/luckstar77/api-stock-dividend-yield"><svg class="icon"><use href="#i-code"/></svg>後端</a>
+            <a href="https://github.com/luckstar77/web-stock-dividend-yield"><svg class="icon"><use href="#i-code"/></svg>前端</a>
+            <a href="https://github.com/luckstar77/crawl-stock-dividend-yield"><svg class="icon"><use href="#i-code"/></svg>爬蟲</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡我 -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="headline reveal from-left">
+          <h2>聯絡我</h2>
+          <p class="sub">Contact</p>
+        </div>
+
+        <div class="md-6 reveal from-up">
+          <p>有任何問題或想法，歡迎來信，我會盡快回覆。</p>
+          <ul class="icon-list">
+            <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:luckstar77y@gmail.com">luckstar77y@gmail.com</a></li>
+            <li><svg class="icon solid"><use href="#i-github"/></svg><a href="https://github.com/luckstar77">github.com/luckstar77</a></li>
+            <li><svg class="icon"><use href="#i-globe"/></svg><a href="https://imallenlai.com">imallenlai.com</a></li>
+          </ul>
+        </div>
+
+        <div class="md-6 reveal from-right">
+          <form id="contact-form" novalidate>
+            <label class="visually-hidden" for="name">你的名字</label>
+            <input type="text" id="name" class="form-control" name="name" placeholder="你的名字" autocomplete="name">
+            <label class="visually-hidden" for="email">你的 Email</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="你的 Email" autocomplete="email">
+            <label class="visually-hidden" for="message">想說的話</label>
+            <textarea id="message" class="form-control" name="message" rows="7" placeholder="想說的話"></textarea>
+            <a href="mailto:luckstar77y@gmail.com" class="btn btn-custom-1" id="send-email"><svg class="icon"><use href="#i-send"/></svg>寄出</a>
+            <p class="form-note">按下「寄出」會開啟你的郵件程式，由你自己寄出；這個網站不會收集或儲存任何資料。</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <p class="copy">© <span id="year">2026</span> 賴逸倫 Allen Lai. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
