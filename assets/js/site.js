@@ -126,8 +126,8 @@
         var message = form.elements.message.value.trim();
         if (!name && !email && !message) return;
         event.preventDefault();
-        var body = '我的名字：' + name + '\n我的 Email：' + email + '\n\n' + message;
-        var subject = name ? '來自 imallenlai.com 的訊息（' + name + '）' : '來自 imallenlai.com 的訊息';
+        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+        var subject = name ? 'Message from imallenlai.com (' + name + ')' : 'Message from imallenlai.com';
         window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       });
     }
