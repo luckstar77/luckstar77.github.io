@@ -391,16 +391,8 @@ p { margin: 0 0 12px; }
 .headline h2 .project-icons img { width: 44px; height: 44px; transition: transform .2s ease; }
 .headline h2 .project-icons a:hover img { transform: translateY(-3px); }
 
-/* 英文段落裡的中文專案名稱與 LITE-ON 不要從中間斷行。 */
-span[lang="zh-Hant"], .nowrap { white-space: nowrap; }
-
-.headline h2 .alt {
-  font-family: var(--cjk);
-  font-size: .75em;
-  font-weight: 400;
-  color: var(--muted);
-  margin-left: 12px;
-}
+/* 名字與 LITE-ON 不要從中間斷行。 */
+.nowrap { white-space: nowrap; }
 
 .avatar {
   display: block;
