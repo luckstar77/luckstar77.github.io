@@ -540,7 +540,7 @@ p { margin: 0 0 12px; }
 .portfolio-item-description {
   position: absolute;
   left: 0; right: 0; bottom: -80px;
-  padding: 22px;
+  padding: 16px;
   text-align: center;
   background: rgba(255, 255, 255, .88);
   color: var(--ink);
@@ -551,15 +551,12 @@ p { margin: 0 0 12px; }
 .portfolio-item:hover .portfolio-item-description,
 .portfolio-item:focus .portfolio-item-description { opacity: 1; bottom: 0; }
 
-.portfolio-item-description h3 { margin: 0 0 4px; }
 .portfolio-item-description p { margin: 0; font-weight: 700; color: var(--muted); }
+.portfolio-item-description .icon { vertical-align: -0.15em; }
 
 .portfolio-card h3 { margin-bottom: 4px; }
 .portfolio-card .since { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
 .portfolio-card p { font-size: 15px; }
-
-.links { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 15px; }
-.links a { display: inline-flex; align-items: center; gap: 6px; }
 
 /* ---------- Contact ---------- */
 
@@ -650,7 +647,7 @@ textarea.form-control { resize: vertical; min-height: 170px; }
   .headline { margin-bottom: 40px; }
   .hide-xs { display: none; }
   .avatar { margin: 0 auto 30px; }
-  .widget-social, .links { justify-content: center; }
+  .widget-social { justify-content: center; }
   .stat .stat-icon, .resume-group h3, .resume-place .when { justify-content: center; }
   .icon-list li { justify-content: center; }
   .profile-item { margin-bottom: 14px; }
@@ -668,5 +665,5 @@ textarea.form-control { resize: vertical; min-height: 170px; }
   .js .reveal.in { animation: none; }
   .mouse-icon .wheel { animation: none; }
   .rotate { transition: none; }
-  .portfolio-item-preview { transition: none; }
+  .portfolio-item-preview, .portfolio-item-description { transition: none; }
 }
